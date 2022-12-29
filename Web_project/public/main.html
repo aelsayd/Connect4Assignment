@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="menus.css">
+		<title></title>
+	</head>
+	<body>
+		<div id="waiting">
+			 <img src="resources/loading.gif" alt="Loading.." height="420" width="420"> 
+			<span  class="title">Please wait...</span>		
+		</div>
+
+		<div id="main"> 
+			<canvas id="canvas" onclick="mouseClicked()"></canvas>	
+			<div class="menu">
+				<div class="submenu">
+					<span id="turn">Blue</span><span>'s turn</span>
+				</div>	
+				<div class="submenu">
+					<span id="timer">0</span>	
+				</div>	
+			</div>	
+		</div>
+			<div class="menu-right">
+				<img onclick="fullscreen()" src="resources/fullscreen.png" alt="fullscreen" width="80" height="80">	
+			</div>	
+
+		<div id="container">
+
+			<div id=final_menu>
+				<div class="title_final">
+					<span id="message"></span>	
+				</div>
+				<div id="play" onclick="window.location.href='../';">
+					<span>Continue!</span>
+				</div>	
+			</div>	
+	
+		</div>	
+
+	</body>
+	<script src="index.js"></script> 	
+	<script src="main.js"></script> 	
+</html>
+
+

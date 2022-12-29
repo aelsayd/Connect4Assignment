@@ -1,0 +1,189 @@
+
+
+body
+{
+	padding:0px;
+	margin:0px;
+	background: #444455;
+}
+.bg
+{
+	margin:0px;
+	height: 100%;
+	width: 100%;
+	display:flex;
+	justify-content:center;
+	align-items:center; 
+}
+.menu
+{
+	width: 450px;
+	height: 500px;
+	
+	margin: auto;
+	margin-top:12%;
+	
+	background: #fafafa;
+
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #bcbcbc;
+	
+	text-align: center;
+}
+
+.play
+{
+	cursor:pointer;
+	font-family: "arial";
+	user-select: none;
+	margin:auto;
+
+	background: transparent;
+	
+	width: 100px;
+
+	border:solid 1px black;
+
+	margin-top: 100px;;
+	font-size: 16pt;
+
+	padding: 16px 100px 16px 100px;
+
+
+	transition: padding 0.2s;
+}
+
+
+.play:active
+{
+	background: coral !important;
+}
+
+.play:hover
+{
+	padding: 26px 130px 26px 130px;
+
+}
+
+.play::after
+{
+	content:"Play!";
+}
+
+.title
+{
+	color: #515151;	
+	font-family: "arial";
+	font-size: 32pt;
+	margin-top: 80px;
+}
+
+ul
+{
+	list-style-type: none;
+}
+li
+{
+	margin: 25px;
+	float:left;
+}
+.how
+{
+	margin-top:30px;
+	font-size:18;
+	text-decoration: underline;
+	font-style:italic;
+	color: #bababa;
+}
+
+
+a:visited,a:active
+{
+	color: #bababa;
+}
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	background-color: lavender;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+#myBtn
+{
+	cursor: pointer;
+}
+#myBtn::after
+{
+	content: "How to play?";
+}
+
+@media screen and (max-width: 1365px),  screen and (max-height: 768px)
+{
+	.play
+	{
+		display:none;
+	}
+	
+	.menu
+	{
+		height: 300px; 
+	}
+	#rules
+	{
+		display: none;
+	}
+	.cont
+	{
+		margin:auto;	
+		width: 100px;
+		margin-top: 100px;;
+		padding: 16px 100px 16px 100px;
+	}
+	#myBtn::after
+	{
+	 	position: relative;
+		top: -60px;	
+		content: "Where is the play button?";
+	}
+	.modal-content::after
+	{
+		display: block;
+		white-space: pre;
+		content: "Your screensize does not match the requirements for this game. \A\A Please try another device."
+	}
+
+}

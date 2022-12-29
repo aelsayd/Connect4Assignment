@@ -1,0 +1,140 @@
+Canvas
+{
+	background: #151515;
+}
+body
+{
+	background: #444455;
+	padding:0;
+	margin:0;
+	overflow: hidden;;
+}
+
+img {
+  filter: sepia(100%) hue-rotate(220deg) brightness(75%) saturate(200%);
+}
+
+#waiting
+{
+	width: 450px;
+	height: 500px;
+	
+	margin: auto;
+	margin-top:12%;
+	
+	text-align: center;
+}
+
+.title
+{
+	color: #ababab;	
+	font-family: "arial";
+	font-size: 32pt;
+	margin-top: 300px;
+}
+
+.title_final
+{
+	color: #515151;	
+	font-family: "arial";
+	font-size: 34pt;
+	margin-top: 60px;
+}
+
+
+.menu
+{
+	pointer-events:none;
+	position:absolute; 
+	left: 25; 
+	top:10;
+}
+.menu-right
+{
+	position:absolute; 
+	right: 25; 
+	top:10;
+}
+
+.submenu
+{
+	display:inline-block;
+	padding: 10px;
+	margin-bottom:15px;
+	margin-right:100%;
+	background: transparent; 
+	font-size: 24pt;
+	width: max-content;
+	text-align: center; 
+	border: solid 1px; 
+	border-radius: 10px; 
+	color: #989898;
+}
+
+#container
+{
+	position:absolute; 
+	left: 50%;
+	top: 350px;
+
+
+
+}
+#final_menu
+{
+	position: relative;
+	left: -50%;
+	width: 450px;
+	height: 300px;
+	
+
+	background: #fafafadd;
+
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #bcbcbc;
+	
+	text-align: center;
+}
+
+#play
+{
+	cursor:pointer;
+	font-family: "arial";
+	user-select: none;
+	margin:auto;
+
+	background: transparent;
+
+	width: 100px;
+
+	border:solid 1px black;
+
+	margin-top: 45px;;
+	font-size: 16pt;
+
+	transition: padding 0.2s;
+	padding: 16px 100px 16px 100px;
+
+}
+#play:active
+{
+	background: coral !important;
+}
+
+#play:hover
+{
+	padding: 20px 115px 20px 115px;
+
+}
+
+@keyframes finale
+{
+	0% {top:100%;}
+	100% {top:350px;}
+}
+
+
+
+

@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+ <html>
+	<head>
+		<title>Connect 4: a two player board game</title>
+		<meta charset="utf-8"/>
+		<link href="style.css" rel="stylesheet">
+		 <script src="script.js"></script> 	
+	</head>
+	<body>
+		<main>
+			<div class="bg">
+				<div class="menu">
+					<div class="title">
+						<span>Connect Four</span>	
+					</div>
+					<ul id="stats">
+						<li><span>
+								<%= visits %>
+							</span> VIsited </li>
+							
+						<li><span>
+								<%= played %></span> Played</li>
+						<li><span>
+								<%= playing %>
+							</span> Playing</li>	
+					</ul>	
+					<div class="play" onclick="window.location.href='../play';">
+
+					</div>	
+					<div class=cont>
+
+					</div>	
+						
+					<div class="how">
+						<span id="myBtn"></span>	
+					</div>	
+					<div id="myModal" class="modal">
+						<div class="modal-content">
+   						<span class="close">&times;</span>
+						<div id="rules">
+							<p>These are the rules of the game:</p>
+							<p>You will play with a partner and you will take turns dropping one disk in the available columns. </p>
+							<p>The first person to form a horizontal, vertical or diagonal line of four wins the game.</p>
+						</div>	
+  						</div>
+					</div>				
+				</div>
+			</div>	
+		</main>
+	</body>
+</html>
+
+
